@@ -1,0 +1,13 @@
+<div class="container">
+<h3>Enter a url to return thumbnails</h3>
+<input type="text" ng-model="url"><br>
+<p>Accessing {{url}}</p>
+<br>
+<button class="btn btn-default" ng-click="sendurl(url)">Image Search</button>
+
+</div>
+<div class="container">
+<ul>
+  <li ng-repeat="image in imagelist.imagelist track by $index"><img src="{{image}}" style="max-width:100px; max-height:100px"></li>
+  </ul>
+</div>
